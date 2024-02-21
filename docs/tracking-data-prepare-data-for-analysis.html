@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Tracking data: Prepare data for analysis | Marine Megafauna Conservation Toolkit</title>
+  <meta name="description" content="4 Tracking data: Prepare data for analysis | Marine Megafauna Conservation Toolkit" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Tracking data: Prepare data for analysis | Marine Megafauna Conservation Toolkit" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Tracking data: Prepare data for analysis | Marine Megafauna Conservation Toolkit" />
+  
+  
+  
+
+<meta name="author" content="Bethany Clark" />
+
+
+<meta name="date" content="2023-05-05" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="tracking-data-sampling-strategy.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="" data-path="seaward-extension-introduction.html"><a href="seaward-extension-introduction.html"><i class="fa fa-check"></i>Seaward Extension Introduction</a></li>
+<li class="chapter" data-level="1" data-path="seaward-extensions-single-colony.html"><a href="seaward-extensions-single-colony.html"><i class="fa fa-check"></i><b>1</b> Seaward Extensions: Single colony</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="seaward-extensions-single-colony.html"><a href="seaward-extensions-single-colony.html#summary"><i class="fa fa-check"></i><b>1.1</b> <strong>Summary</strong></a></li>
+<li class="chapter" data-level="1.2" data-path="seaward-extensions-single-colony.html"><a href="seaward-extensions-single-colony.html#load-required-r-packages"><i class="fa fa-check"></i><b>1.2</b> <strong>Load required R packages:</strong></a></li>
+<li class="chapter" data-level="1.3" data-path="seaward-extensions-single-colony.html"><a href="seaward-extensions-single-colony.html#supply-input-data"><i class="fa fa-check"></i><b>1.3</b> <strong>Supply input data</strong></a></li>
+<li class="chapter" data-level="1.4" data-path="seaward-extensions-single-colony.html"><a href="seaward-extensions-single-colony.html#format-colony-location-as-spatial-objects"><i class="fa fa-check"></i><b>1.4</b> <strong>Format colony location as spatial objects</strong></a></li>
+<li class="chapter" data-level="1.5" data-path="seaward-extensions-single-colony.html"><a href="seaward-extensions-single-colony.html#create-a-background-raster"><i class="fa fa-check"></i><b>1.5</b> <strong>Create a background raster</strong></a></li>
+<li class="chapter" data-level="1.6" data-path="seaward-extensions-single-colony.html"><a href="seaward-extensions-single-colony.html#calculate-distance-by-sea-from-the-colony-per-cell"><i class="fa fa-check"></i><b>1.6</b> <strong>Calculate distance by sea from the colony per cell</strong></a></li>
+<li class="chapter" data-level="1.7" data-path="seaward-extensions-single-colony.html"><a href="seaward-extensions-single-colony.html#calculate-estimate-number-of-birds-from-the-colony-using-each-cell"><i class="fa fa-check"></i><b>1.7</b> <strong>Calculate estimate number of birds from the colony using each cell</strong></a></li>
+<li class="chapter" data-level="1.8" data-path="seaward-extensions-single-colony.html"><a href="seaward-extensions-single-colony.html#save-raster-outputs"><i class="fa fa-check"></i><b>1.8</b> <strong>Save raster outputs</strong></a></li>
+<li class="chapter" data-level="1.9" data-path="seaward-extensions-single-colony.html"><a href="seaward-extensions-single-colony.html#calculate-iba-raster"><i class="fa fa-check"></i><b>1.9</b> <strong>Calculate IBA raster</strong></a></li>
+<li class="chapter" data-level="1.10" data-path="seaward-extensions-single-colony.html"><a href="seaward-extensions-single-colony.html#calculate-iba-polygon"><i class="fa fa-check"></i><b>1.10</b> <strong>Calculate IBA polygon</strong></a></li>
+<li class="chapter" data-level="1.11" data-path="seaward-extensions-single-colony.html"><a href="seaward-extensions-single-colony.html#plot-and-save-the-final-iba-polygon"><i class="fa fa-check"></i><b>1.11</b> Plot and save the final IBA polygon</a></li>
+<li class="chapter" data-level="1.12" data-path="seaward-extensions-single-colony.html"><a href="seaward-extensions-single-colony.html#record-the-metadata"><i class="fa fa-check"></i><b>1.12</b> Record the metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="tracking-data-introduction.html"><a href="tracking-data-introduction.html"><i class="fa fa-check"></i><b>2</b> Tracking data: Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="tracking-data-introduction.html"><a href="tracking-data-introduction.html#introduction-to-animal-tracking-data-considered-in-this-toolkit"><i class="fa fa-check"></i><b>2.1</b> Introduction to animal tracking data considered in this toolkit</a></li>
+<li class="chapter" data-level="2.2" data-path="tracking-data-introduction.html"><a href="tracking-data-introduction.html#lay-introduction-to-gps-ptt-gls-devices"><i class="fa fa-check"></i><b>2.2</b> Lay introduction to GPS, PTT, GLS devices</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html"><i class="fa fa-check"></i><b>3</b> Tracking data: Sampling strategy</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#sampling-strategy-when-collecting-animal-tracking-data-for-seabirds"><i class="fa fa-check"></i><b>3.1</b> Sampling strategy when collecting animal tracking data for seabirds</a></li>
+<li class="chapter" data-level="3.2" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#how-many-birds-should-you-track"><i class="fa fa-check"></i><b>3.2</b> How many birds should you track?</a></li>
+<li class="chapter" data-level="3.3" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#how-many-years-of-tracking-data-should-you-collect"><i class="fa fa-check"></i><b>3.3</b> How many years of tracking data should you collect?</a></li>
+<li class="chapter" data-level="3.4" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#how-many-years-of-tracking-data-should-you-collect-for-iba-or-kba-identification"><i class="fa fa-check"></i><b>3.4</b> How many years of tracking data should you collect for IBA or KBA identification?</a></li>
+<li class="chapter" data-level="3.5" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#which-locations-should-you-track-animals-from"><i class="fa fa-check"></i><b>3.5</b> Which locations should you track animals from?</a></li>
+<li class="chapter" data-level="3.6" data-path="tracking-data-sampling-strategy.html"><a href="tracking-data-sampling-strategy.html#sampling-strategy-general-recommendations"><i class="fa fa-check"></i><b>3.6</b> Sampling strategy general recommendations</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html"><i class="fa fa-check"></i><b>4</b> Tracking data: Prepare data for analysis</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#what-this-chapter-covers"><i class="fa fa-check"></i><b>4.1</b> What this chapter covers:</a></li>
+<li class="chapter" data-level="4.2" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#where-you-can-get-example-data-for-the-chapter"><i class="fa fa-check"></i><b>4.2</b> Where you can get example data for the chapter:</a></li>
+<li class="chapter" data-level="4.3" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#load-packages"><i class="fa fa-check"></i><b>4.3</b> Load packages</a></li>
+<li class="chapter" data-level="4.4" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#storing-reading-and-formatting-raw-tracking-data"><i class="fa fa-check"></i><b>4.4</b> Storing, reading, and formatting raw tracking data</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#storing-raw-tracking-data"><i class="fa fa-check"></i><b>4.4.1</b> Storing raw tracking data</a></li>
+<li class="chapter" data-level="4.4.2" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#reading-raw-tracking-data-into-r-rstudio"><i class="fa fa-check"></i><b>4.4.2</b> Reading raw tracking data into R / Rstudio</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#example-data-summary-yelkouan-shearwaters-puffinus-yelkouan-croatia"><i class="fa fa-check"></i><b>4.5</b> Example data summary: Yelkouan Shearwaters (<em>Puffinus yelkouan</em>), Croatia</a></li>
+<li class="chapter" data-level="4.6" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#loading-example-data-yelkouan-shearwaters-puffinus-yelkouan"><i class="fa fa-check"></i><b>4.6</b> Loading example data: Yelkouan Shearwaters (<em>Puffinus yelkouan</em>)</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#load-example-data-first-exploring-the-data-on-your-machine"><i class="fa fa-check"></i><b>4.6.1</b> Load example data: First, exploring the data on your machine</a></li>
+<li class="chapter" data-level="4.6.2" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#load-example-data-second-prepare-the-files-for-loading-into-r"><i class="fa fa-check"></i><b>4.6.2</b> Load example data: Second, prepare the files for loading into R</a></li>
+<li class="chapter" data-level="4.6.3" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#load-example-data-third-load-the-files-into-a-single-data-frame-in-r"><i class="fa fa-check"></i><b>4.6.3</b> Load example data: Third, load the files into a single data frame in R</a></li>
+<li class="chapter" data-level="4.6.4" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#review-the-data-you-have-read-into-r"><i class="fa fa-check"></i><b>4.6.4</b> Review the data you have read into R</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#seabird-tracking-database-format"><i class="fa fa-check"></i><b>4.7</b> Seabird Tracking Database format</a>
+<ul>
+<li class="chapter" data-level="4.7.1" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#loading-the-dataset-template-from-seabird-tracking-database"><i class="fa fa-check"></i><b>4.7.1</b> Loading the dataset template from Seabird Tracking Database</a></li>
+<li class="chapter" data-level="4.7.2" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#formatting-own-data-to-align-with-seabird-tracking-database-input-format"><i class="fa fa-check"></i><b>4.7.2</b> Formatting own data to align with Seabird Tracking Database INPUT format</a></li>
+</ul></li>
+<li class="chapter" data-level="4.8" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#chapter-close-and-next-steps"><i class="fa fa-check"></i><b>4.8</b> Chapter close and next steps:</a></li>
+<li class="chapter" data-level="4.9" data-path="tracking-data-prepare-data-for-analysis.html"><a href="tracking-data-prepare-data-for-analysis.html#save-data-for-further-analyses"><i class="fa fa-check"></i><b>4.9</b> Save data for further analyses:</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Marine Megafauna Conservation Toolkit</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="tracking-data-prepare-data-for-analysis" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> Tracking data: Prepare data for analysis<a href="tracking-data-prepare-data-for-analysis.html#tracking-data-prepare-data-for-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Analyses outlined in this chapter were performed in <strong>R version 4.2.2 (2022-10-31 ucrt)</strong><br />
+</p>
+<p>This chapter was last updated on <strong>2023-08-16</strong></p>
+<p><br></p>
+<!--- This is an HTML comment in RMarkdown. You can use these comments to make notes that won't get read when running the code -->
+<!--- If you don't understand what a RMarkdown document is. Stop here. Go learn. -->
+<!--- Equally. You must understand the difference between Markdown vs. RMarkdown -->
+<!--- Remember, outside of the R code chunks we are now coding in HTML syntax, not R syntax -->
+<div id="what-this-chapter-covers" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> What this chapter covers:<a href="tracking-data-prepare-data-for-analysis.html#what-this-chapter-covers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>Read in raw tracking data into R (assuming data is in *.csv file format).</p></li>
+<li><p>Combine data into a single data frame.</p></li>
+<li><p>Convert the data into the INPUT format of the Seabird Tracking Database: <a href="https://www.seabirdtracking.org/" class="uri">https://www.seabirdtracking.org/</a>.</p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="where-you-can-get-example-data-for-the-chapter" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Where you can get example data for the chapter:<a href="tracking-data-prepare-data-for-analysis.html#where-you-can-get-example-data-for-the-chapter" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This tutorial uses example data from a project led by the BirdLife International partner in Croatia: BIOM</p>
+<ul>
+<li><p>The citation for this data is: <strong>TBC</strong></p></li>
+<li><p>The example data can be downloaded from: <strong>TBC - STDB</strong></p></li>
+</ul>
+<p><br></p>
+<!--- In the code chunk below, we specify include = F, so that we will run the chunk but not include the chunk in the final document. We set a global argument in the code chunk of echo = T, so that in later code chunks, the code will be displayed in the RMarkdown document -->
+</div>
+<div id="load-packages" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Load packages<a href="tracking-data-prepare-data-for-analysis.html#load-packages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Load required R packages for use with codes in this chapter:</strong></p>
+<p>If the package(s) fails to load, you will need to install the relevant package(s).</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="tracking-data-prepare-data-for-analysis.html#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="do">## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb21-2"><a href="tracking-data-prepare-data-for-analysis.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Load libraries --------------------------------------------------------------</span></span>
+<span id="cb21-3"><a href="tracking-data-prepare-data-for-analysis.html#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="do">## ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span></span>
+<span id="cb21-4"><a href="tracking-data-prepare-data-for-analysis.html#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="tracking-data-prepare-data-for-analysis.html#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="do">## sf package for spatial data analyses (i.e. vector files such as points, lines, polygons)</span></span>
+<span id="cb21-6"><a href="tracking-data-prepare-data-for-analysis.html#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb21-7"><a href="tracking-data-prepare-data-for-analysis.html#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="do">## Tidyverse for data manipulation</span></span>
+<span id="cb21-8"><a href="tracking-data-prepare-data-for-analysis.html#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb21-9"><a href="tracking-data-prepare-data-for-analysis.html#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="do">## ggplot2 for plotting opionts</span></span>
+<span id="cb21-10"><a href="tracking-data-prepare-data-for-analysis.html#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb21-11"><a href="tracking-data-prepare-data-for-analysis.html#cb21-11" aria-hidden="true" tabindex="-1"></a><span class="do">## rnaturalearth package for geographic basemaps in R</span></span>
+<span id="cb21-12"><a href="tracking-data-prepare-data-for-analysis.html#cb21-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rnaturalearth)</span>
+<span id="cb21-13"><a href="tracking-data-prepare-data-for-analysis.html#cb21-13" aria-hidden="true" tabindex="-1"></a><span class="do">## leaflet package for interactive maps in R</span></span>
+<span id="cb21-14"><a href="tracking-data-prepare-data-for-analysis.html#cb21-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb21-15"><a href="tracking-data-prepare-data-for-analysis.html#cb21-15" aria-hidden="true" tabindex="-1"></a><span class="do">## lubridate for date time</span></span>
+<span id="cb21-16"><a href="tracking-data-prepare-data-for-analysis.html#cb21-16" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb21-17"><a href="tracking-data-prepare-data-for-analysis.html#cb21-17" aria-hidden="true" tabindex="-1"></a><span class="do">## track2kba for the analysis of important site identification</span></span>
+<span id="cb21-18"><a href="tracking-data-prepare-data-for-analysis.html#cb21-18" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(track2KBA)</span>
+<span id="cb21-19"><a href="tracking-data-prepare-data-for-analysis.html#cb21-19" aria-hidden="true" tabindex="-1"></a><span class="do">## speed filter</span></span>
+<span id="cb21-20"><a href="tracking-data-prepare-data-for-analysis.html#cb21-20" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(trip)</span>
+<span id="cb21-21"><a href="tracking-data-prepare-data-for-analysis.html#cb21-21" aria-hidden="true" tabindex="-1"></a><span class="do">## linear interpolation</span></span>
+<span id="cb21-22"><a href="tracking-data-prepare-data-for-analysis.html#cb21-22" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(adehabitatLT)</span>
+<span id="cb21-23"><a href="tracking-data-prepare-data-for-analysis.html#cb21-23" aria-hidden="true" tabindex="-1"></a><span class="do">##</span></span>
+<span id="cb21-24"><a href="tracking-data-prepare-data-for-analysis.html#cb21-24" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(raster)</span>
+<span id="cb21-25"><a href="tracking-data-prepare-data-for-analysis.html#cb21-25" aria-hidden="true" tabindex="-1"></a><span class="do">##</span></span>
+<span id="cb21-26"><a href="tracking-data-prepare-data-for-analysis.html#cb21-26" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(viridis)</span>
+<span id="cb21-27"><a href="tracking-data-prepare-data-for-analysis.html#cb21-27" aria-hidden="true" tabindex="-1"></a><span class="do">##</span></span>
+<span id="cb21-28"><a href="tracking-data-prepare-data-for-analysis.html#cb21-28" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb21-29"><a href="tracking-data-prepare-data-for-analysis.html#cb21-29" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(xlsx)</span></code></pre></div>
+<p><br></p>
+</div>
+<div id="storing-reading-and-formatting-raw-tracking-data" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Storing, reading, and formatting raw tracking data<a href="tracking-data-prepare-data-for-analysis.html#storing-reading-and-formatting-raw-tracking-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><br></p>
+<div id="storing-raw-tracking-data" class="section level3 hasAnchor" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> Storing raw tracking data<a href="tracking-data-prepare-data-for-analysis.html#storing-raw-tracking-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The type of animal tracking device you use will dictate what format your raw tracking data is stored in.</p>
+<p>Typically, raw outputs from animal tracking devices have been stored as *.csv files.</p>
+<p>Good file management is critical when working with large tracking datasets.</p>
+<p>[As a guide, the following file structure can support efficient data management]</p>
+<p><br></p>
+</div>
+<div id="reading-raw-tracking-data-into-r-rstudio" class="section level3 hasAnchor" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> Reading raw tracking data into R / Rstudio<a href="tracking-data-prepare-data-for-analysis.html#reading-raw-tracking-data-into-r-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Depending on your file structure, type of raw data, and size of your overall data, we recommend reading data into R in a way that produces a single data file for all your data required for a specific analysis.</p>
+<p><br></p>
+<blockquote>
+<p>Reading all your data in at once is greatly facilitated when each data file is stored in a stardised format.</p>
+</blockquote>
+<p><br></p>
+</div>
+</div>
+<div id="example-data-summary-yelkouan-shearwaters-puffinus-yelkouan-croatia" class="section level2 hasAnchor" number="4.5">
+<h2><span class="header-section-number">4.5</span> Example data summary: Yelkouan Shearwaters (<em>Puffinus yelkouan</em>), Croatia<a href="tracking-data-prepare-data-for-analysis.html#example-data-summary-yelkouan-shearwaters-puffinus-yelkouan-croatia" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Summary of the example dataset used in this tutorial:</p>
+<ul>
+<li><p>Species tracked: Yelkouan Shearwater (<em>Puffinus yelkouan</em>)</p></li>
+<li><p>Colony tracked from: Zaklopatica (Z)</p></li>
+</ul>
+<!--- We originally considered all the data from Life Artina project 
+(Yelkouan Shearwater tracking project in Croatia)
+- (sub)Colonies tracked from: Zaklopatica (Z), Veli Maslovnjak (VM) 
+We are now focusing on just one colony so the format better aligns with
+the Seabird Tracking Database -->
+<ul>
+<li><p>Site / source population birds tracked from: Lastovo SPA, Croatia</p></li>
+<li><p>Life-cycle stage when birds were tracked: chick-rearing</p></li>
+<li><p>Years birds were tracked over: 2019, 2020</p></li>
+<li><p>Devices birds were tracked with: GPS</p></li>
+<li><p>Device model type: PathTrack nanoFix GPS/UHF transmitters (≤ 5.5 g)</p></li>
+<li><p>[Figure showcasing Lastovo SPA and source populations - Consider Sensitivity of Colony Locations!! Is this a problem to share these locations?]</p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="loading-example-data-yelkouan-shearwaters-puffinus-yelkouan" class="section level2 hasAnchor" number="4.6">
+<h2><span class="header-section-number">4.6</span> Loading example data: Yelkouan Shearwaters (<em>Puffinus yelkouan</em>)<a href="tracking-data-prepare-data-for-analysis.html#loading-example-data-yelkouan-shearwaters-puffinus-yelkouan" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="load-example-data-first-exploring-the-data-on-your-machine" class="section level3 hasAnchor" number="4.6.1">
+<h3><span class="header-section-number">4.6.1</span> Load example data: First, exploring the data on your machine<a href="tracking-data-prepare-data-for-analysis.html#load-example-data-first-exploring-the-data-on-your-machine" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="tracking-data-prepare-data-for-analysis.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Check where your current working directory is set up to go to:</span></span>
+<span id="cb22-2"><a href="tracking-data-prepare-data-for-analysis.html#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div>
+<pre><code>## [1] &quot;C:/Users/jonathan.handley/OneDrive - BirdLife International/JonoHandley_BirdLife/PROJECTS/Marine Toolkit/GitHub_MarineToolkit_JH3/MarMeCo-Toolkit-R-Beta-JH3&quot;</code></pre>
+<p>In the examples below, you can see different levels at which we have explored what is inside each folder.</p>
+<p>You will note:</p>
+<ul>
+<li><p>A top level folder called <strong>Puffinus-yelkouan-raw-csv-tracking</strong></p></li>
+<li><p>Within this folder, different colonies worth of tracking data: Zaklopatica (Z), Veli Maslovnjak (VM).</p></li>
+<li><p>Within each colony folder of tracking data, uniquely named <strong>.csv</strong> files relating to each unique deployment on a bird.</p></li>
+</ul>
+<p><br></p>
+<blockquote>
+<p>This format of broadly storing data by Species -&gt; Colony is aligned with the format used for inputting data into the Seabird Tracking Database.</p>
+</blockquote>
+<blockquote>
+<p><em>[We recognise that more granular (finer) levels of data storage may be chosen. See Appendix for suggestions]</em></p>
+</blockquote>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="tracking-data-prepare-data-for-analysis.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="do">## so long as your working directory is set up in the correct place, you can review</span></span>
+<span id="cb24-2"><a href="tracking-data-prepare-data-for-analysis.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="do">## the contents of what is inside the folder and relevant sub-directories with the dir command.</span></span>
+<span id="cb24-3"><a href="tracking-data-prepare-data-for-analysis.html#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="fu">dir</span>()</span></code></pre></div>
+<pre><code>##  [1] &quot;_book&quot;                                        
+##  [2] &quot;_main.Rmd&quot;                                    
+##  [3] &quot;_main_files&quot;                                  
+##  [4] &quot;02_Seaward_extension_introduction.Rmd&quot;        
+##  [5] &quot;03_Seaward_extension_background_single_ne.Rmd&quot;
+##  [6] &quot;04-TrackingData-IntroToTracking.Rmd&quot;          
+##  [7] &quot;05-TrackingData-SamplingStrategy.Rmd&quot;         
+##  [8] &quot;06-TrackingData-FormatAndMergeCSVfiles.Rmd&quot;   
+##  [9] &quot;data-input-files-bookdown&quot;                    
+## [10] &quot;data-testing&quot;                                 
+## [11] &quot;index.Rmd&quot;                                    
+## [12] &quot;MarMeCo-Toolkit-R-Beta-JH3.Rproj&quot;             
+## [13] &quot;photos-for-book&quot;                              
+## [14] &quot;R-RMarkdown-BookdownChapters&quot;                 
+## [15] &quot;R-RMarkdown-Jono&quot;                             
+## [16] &quot;R-RMarkdown-TestFiles&quot;                        
+## [17] &quot;seaward_extension_outputs&quot;</code></pre>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="tracking-data-prepare-data-for-analysis.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dir</span>(<span class="st">&quot;./data-testing/tracking-data/Puffinus-yelkouan-raw-csv-tracking&quot;</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;VM&quot; &quot;Z&quot;</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="tracking-data-prepare-data-for-analysis.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dir</span>(<span class="st">&quot;./data-testing/tracking-data/Puffinus-yelkouan-raw-csv-tracking/VM&quot;</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;20_Tag17700_VM-13.csv&quot;             &quot;20_Tag17717_VM-8.csv&quot;             
+## [3] &quot;20_Tag40014_VM-3 (2nd Parent).csv&quot; &quot;20_Tag40086_VM-3.csv&quot;             
+## [5] &quot;20_Tag40138_VM-18.csv&quot;             &quot;20_Tag40536_VM-8 (2nd Parent).csv&quot;
+## [7] &quot;20_Tag40615_VM-23.csv&quot;             &quot;20_Tag40817_VM-12.csv&quot;</code></pre>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="tracking-data-prepare-data-for-analysis.html#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dir</span>(<span class="st">&quot;./data-testing/tracking-data/Puffinus-yelkouan-raw-csv-tracking/Z&quot;</span>)</span></code></pre></div>
+<pre><code>##  [1] &quot;19_Tag17600_Z-9.csv&quot;                   
+##  [2] &quot;19_Tag17604_Z-7.csv&quot;                   
+##  [3] &quot;19_Tag17617_Z-4 (2nd Parent).csv&quot;      
+##  [4] &quot;19_Tag17644_Z-13.csv&quot;                  
+##  [5] &quot;19_Tag17652_Z-2.csv&quot;                   
+##  [6] &quot;19_Tag17704_Z-11.csv&quot;                  
+##  [7] &quot;19_Tag17735_Z-3 (RAW DATA MISSING).csv&quot;
+##  [8] &quot;19_Tag40066_Z-14.csv&quot;                  
+##  [9] &quot;19_Tag40069_Z-6.csv&quot;                   
+## [10] &quot;19_Tag40073_Z-1.csv&quot;                   
+## [11] &quot;19_Tag40078_Z-3 (2nd Parent).csv&quot;      
+## [12] &quot;19_Tag40086_Z-11 (2nd Parent).csv&quot;     
+## [13] &quot;19_Tag40094_Z-16.csv&quot;                  
+## [14] &quot;19_Tag40118_Z-2 (2nd Parent).csv&quot;      
+## [15] &quot;19_Tag40133_Z-15.csv&quot;                  
+## [16] &quot;19_Tag40138_Z-17.csv&quot;                  
+## [17] &quot;19_Tag40170_Z-12.csv&quot;                  
+## [18] &quot;19_Tag40177_Z-17 (2nd Parent).csv&quot;     
+## [19] &quot;19_Tag40182_Z-4.csv&quot;                   
+## [20] &quot;20_Tag17600_Z-170.csv&quot;                 
+## [21] &quot;20_Tag17604_Z-95.csv&quot;                  
+## [22] &quot;20_Tag17644_Z-106.csv&quot;                 
+## [23] &quot;20_Tag17677_Z-170 (2nd Parent).csv&quot;    
+## [24] &quot;20_Tag17724_Z-106 (2nd Parent).csv&quot;    
+## [25] &quot;20_Tag40024_Z-178 (2nd Parent).csv&quot;    
+## [26] &quot;20_Tag40039_Z-15 (2nd Parent).csv&quot;     
+## [27] &quot;20_Tag40073_Z-131 (2nd Parent).csv&quot;    
+## [28] &quot;20_Tag40078_Z-178.csv&quot;                 
+## [29] &quot;20_Tag40094_Z-131.csv&quot;                 
+## [30] &quot;20_Tag40118_Z-175.csv&quot;                 
+## [31] &quot;20_Tag40133_Z-1 (2nd Parent).csv&quot;      
+## [32] &quot;20_Tag40193_Z-13 (2nd Parent).csv&quot;     
+## [33] &quot;20_Tag40859_Z-179.csv&quot;                 
+## [34] &quot;20_Tag41108_Z-95 (2nd Parent).csv&quot;</code></pre>
+<p><br></p>
+</div>
+<div id="load-example-data-second-prepare-the-files-for-loading-into-r" class="section level3 hasAnchor" number="4.6.2">
+<h3><span class="header-section-number">4.6.2</span> Load example data: Second, prepare the files for loading into R<a href="tracking-data-prepare-data-for-analysis.html#load-example-data-second-prepare-the-files-for-loading-into-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>[Preparing animal tracking data for merging into a single data frame may require some initial cleaning of the raw tracking data outputs. You will need to consider] :</p>
+<ul>
+<li><p>Do all the devices I have collected data with have a common file format? (e.g. are the column names consistent across all devices?)</p></li>
+<li><p>Do all the devices I have collected data with have a common file type? (e.g. are the output files *.csv files, or are they custom to the device manufacturer?)</p></li>
+<li><p>Other</p></li>
+</ul>
+<p>If the raw outputs from tracking devices vary across deployments, you may need to first standardise data from each deployment into a common format for subsequent merging.</p>
+<p>For example: If you deployed GPS device TYPE A in season 1 and the output was a csv file with 8 columns, and you then deployed GPS device TYPE B in season 2 and the output was a custom file type with 10 columns, you would need to standardise the data separately for each GPS device type and season combination, before being able to merge all the data into a single data frame.</p>
+<p><br></p>
+</div>
+<div id="load-example-data-third-load-the-files-into-a-single-data-frame-in-r" class="section level3 hasAnchor" number="4.6.3">
+<h3><span class="header-section-number">4.6.3</span> Load example data: Third, load the files into a single data frame in R<a href="tracking-data-prepare-data-for-analysis.html#load-example-data-third-load-the-files-into-a-single-data-frame-in-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Here, we assume users have prepared their data into standardised *.csv files across each deployment, where each file has the same number of columns and matching column names.</p>
+<blockquote>
+<p>The number of columns and column names can be unique to your data. The key thing is that all column names, and the associated variables represented by each column, are matching.</p>
+</blockquote>
+<p>Notes on the example data:</p>
+<ul>
+<li><p>In the case of the example data for Yelkouan Shearwaters, the original output from the PathTrack nanoFix GPS/UHF transmitters (GPS devices) was a custom *.pos file.</p></li>
+<li><p>[Example R code for reading in and preparing these *.pos files for further analyses in R is provided in the Appendix].</p></li>
+</ul>
+<p>Begin by setting the file path to where your tracking data is stored.</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb32-1"><a href="tracking-data-prepare-data-for-analysis.html#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="do">## First set the file path to where the tracking data is stored.</span></span>
+<span id="cb32-2"><a href="tracking-data-prepare-data-for-analysis.html#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="do">## If you are less familiar with R, it can be easier to specify the entire file path.</span></span>
+<span id="cb32-3"><a href="tracking-data-prepare-data-for-analysis.html#cb32-3" aria-hidden="true" tabindex="-1"></a>fpath.tracks <span class="ot">&lt;-</span> <span class="st">&quot;C:</span><span class="sc">\\</span><span class="st">Users</span><span class="sc">\\</span><span class="st">jonathan.handley</span><span class="sc">\\</span><span class="st">OneDrive - BirdLife International</span><span class="sc">\\</span><span class="st">JonoHandley_BirdLife</span><span class="sc">\\</span><span class="st">PROJECTS</span><span class="sc">\\</span><span class="st">Marine Toolkit</span><span class="sc">\\</span><span class="st">GitHub_MarineToolkit_JH3</span><span class="sc">\\</span><span class="st">MarMeCo-Toolkit-R-Beta-JH3</span><span class="sc">\\</span><span class="st">data-testing</span><span class="sc">\\</span><span class="st">tracking-data</span><span class="sc">\\</span><span class="st">Puffinus-yelkouan-raw-csv-tracking</span><span class="sc">\\</span><span class="st">Z&quot;</span></span></code></pre></div>
+<blockquote>
+<p>Pro Tip: navigate to the folder where your tracking data is stored. Copy the file path from within the file explorer. Then type the <code>readClipboard()</code> function in R to print the file path. Copy and paste the file path into the code above.</p>
+</blockquote>
+<p>[See screenshot of file path with tracking data]</p>
+<p>Then produce a list of file names with all your tracking data</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="tracking-data-prepare-data-for-analysis.html#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="do">## specifying the files: folder directly</span></span>
+<span id="cb33-2"><a href="tracking-data-prepare-data-for-analysis.html#cb33-2" aria-hidden="true" tabindex="-1"></a>track.list <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="at">path =</span> fpath.tracks,</span>
+<span id="cb33-3"><a href="tracking-data-prepare-data-for-analysis.html#cb33-3" aria-hidden="true" tabindex="-1"></a>                         <span class="do">## Set recursive = TRUE to search through sub-folders if required.</span></span>
+<span id="cb33-4"><a href="tracking-data-prepare-data-for-analysis.html#cb33-4" aria-hidden="true" tabindex="-1"></a>                         <span class="at">recursive =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb33-5"><a href="tracking-data-prepare-data-for-analysis.html#cb33-5" aria-hidden="true" tabindex="-1"></a>                         <span class="at">pattern =</span> <span class="st">&quot;.csv&quot;</span>,</span>
+<span id="cb33-6"><a href="tracking-data-prepare-data-for-analysis.html#cb33-6" aria-hidden="true" tabindex="-1"></a>                         <span class="at">full.names =</span> T)</span></code></pre></div>
+<p>Check how long the list of names is names that was read in using the <code>list.files()</code> function.</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb34-1"><a href="tracking-data-prepare-data-for-analysis.html#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Check how many deployments you are expecting to bind together. </span></span>
+<span id="cb34-2"><a href="tracking-data-prepare-data-for-analysis.html#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="do">## This code effectively says, how long is the list </span></span>
+<span id="cb34-3"><a href="tracking-data-prepare-data-for-analysis.html#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="do">## of names that were read in using the list.files function.</span></span>
+<span id="cb34-4"><a href="tracking-data-prepare-data-for-analysis.html#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(track.list)</span></code></pre></div>
+<pre><code>## [1] 34</code></pre>
+<p>If the number is too small or too large, and you expect more or less deployments to be considered, it may be the case that:</p>
+<ul>
+<li><p>there are additional *.csv files in your deployment folders that should not be there (i.e. too many deployments being considered / number too large)</p></li>
+<li><p>there are fewer deployments being considered than should be. (i.e. supposed *.csv files indicative of deployments are likely not being read correctly)</p></li>
+</ul>
+<p>Ultimately, if the number of deployments you think you have in total is not equivalent to this review, then check what the issue might be as per options considered above.</p>
+<p>Next, create a blank data frame to which you can bind on the tracking data from each unique deployment. Effectively, you can consider this step as preparing for sticking all your data together to make one big table (a data frame in R) with all of the data.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="tracking-data-prepare-data-for-analysis.html#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="do">## specify a blank dataframe</span></span>
+<span id="cb36-2"><a href="tracking-data-prepare-data-for-analysis.html#cb36-2" aria-hidden="true" tabindex="-1"></a>track.df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>()</span></code></pre></div>
+<p>Finally, use a for loop to read in each file from each unique deployment, and then bind them all together.</p>
+<blockquote>
+<p>Unsure how a for loop works? See numerous resources online.</p>
+</blockquote>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="tracking-data-prepare-data-for-analysis.html#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(track.list)){</span>
+<span id="cb37-2"><a href="tracking-data-prepare-data-for-analysis.html#cb37-2" aria-hidden="true" tabindex="-1"></a>  <span class="do">## read in a unique file</span></span>
+<span id="cb37-3"><a href="tracking-data-prepare-data-for-analysis.html#cb37-3" aria-hidden="true" tabindex="-1"></a>  temp <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(track.list[i])</span>
+<span id="cb37-4"><a href="tracking-data-prepare-data-for-analysis.html#cb37-4" aria-hidden="true" tabindex="-1"></a>  <span class="do">## bind the unique file onto the data frame template</span></span>
+<span id="cb37-5"><a href="tracking-data-prepare-data-for-analysis.html#cb37-5" aria-hidden="true" tabindex="-1"></a>  track.df <span class="ot">&lt;-</span> <span class="fu">rbind</span>(track.df,temp)</span>
+<span id="cb37-6"><a href="tracking-data-prepare-data-for-analysis.html#cb37-6" aria-hidden="true" tabindex="-1"></a>  <span class="do">## print some text to show progress of the loop and binding process</span></span>
+<span id="cb37-7"><a href="tracking-data-prepare-data-for-analysis.html#cb37-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">&quot;Deployment &quot;</span>, i, <span class="st">&quot; of &quot;</span>, <span class="fu">length</span>(track.list), <span class="st">&quot;being bound to the data frame.&quot;</span>))</span>
+<span id="cb37-8"><a href="tracking-data-prepare-data-for-analysis.html#cb37-8" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<pre><code>## [1] &quot;Deployment  1  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  2  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  3  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  4  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  5  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  6  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  7  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  8  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  9  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  10  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  11  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  12  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  13  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  14  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  15  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  16  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  17  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  18  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  19  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  20  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  21  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  22  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  23  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  24  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  25  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  26  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  27  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  28  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  29  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  30  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  31  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  32  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  33  of  34 being bound to the data frame.&quot;
+## [1] &quot;Deployment  34  of  34 being bound to the data frame.&quot;</code></pre>
+<p><br></p>
+</div>
+<div id="review-the-data-you-have-read-into-r" class="section level3 hasAnchor" number="4.6.4">
+<h3><span class="header-section-number">4.6.4</span> Review the data you have read into R<a href="tracking-data-prepare-data-for-analysis.html#review-the-data-you-have-read-into-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Here you are doing some quick inspections to see if anything unexpected may have happened when reading your data into R.</p>
+<blockquote>
+<p>If you are unsure, or want to learn more about the different way data can be structured in R, consider doing an online R course which teaches the beginnger concepts of R. Also, see the latest “R for Data Science” book by Hadley Wickham and colleagues.</p>
+</blockquote>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="tracking-data-prepare-data-for-analysis.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Print the column names and first two rows of data - does everything look as it should?</span></span>
+<span id="cb39-2"><a href="tracking-data-prepare-data-for-analysis.html#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(track.df,<span class="dv">2</span>)</span></code></pre></div>
+<pre><code>##   day month year hour minute second satellites latitude longitude altitude
+## 1  24     5   19    0     49      9          5 42.81153  16.88553    -1.50
+## 2  24     5   19    1      9      3          5 42.81203  16.88691     5.25
+##   time_offset    accuracy voltage colony_code         bird_id
+## 1       2.910 4.70376e-07    4.12           Z 19_Tag17600_Z-9
+## 2       2.795 9.25368e-07    4.08           Z 19_Tag17600_Z-9
+##                  dttm deploy_year
+## 1 2019-05-24 00:49:09        2019
+## 2 2019-05-24 01:09:03        2019</code></pre>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="tracking-data-prepare-data-for-analysis.html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Print the LAST two rows of data - does everything look as it should?</span></span>
+<span id="cb41-2"><a href="tracking-data-prepare-data-for-analysis.html#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(track.df,<span class="dv">2</span>)</span></code></pre></div>
+<pre><code>##       day month year hour minute second satellites latitude longitude altitude
+## 11353  30     5   20   16     33      5          6 43.19765  16.35486    61.25
+## 11354  30     5   20   19     51     59          6 42.81753  16.76663    86.75
+##       time_offset     accuracy voltage colony_code
+## 11353      -23.16 5.226000e-06    3.98           Z
+## 11354      -23.31 2.183421e-06    4.02           Z
+##                             bird_id                dttm deploy_year
+## 11353 20_Tag41108_Z-95 (2nd Parent) 2020-05-30 16:33:05        2020
+## 11354 20_Tag41108_Z-95 (2nd Parent) 2020-05-30 19:51:59        2020</code></pre>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="tracking-data-prepare-data-for-analysis.html#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Now check the structure of each column of data</span></span>
+<span id="cb43-2"><a href="tracking-data-prepare-data-for-analysis.html#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(track.df,<span class="dv">2</span>)</span></code></pre></div>
+<pre><code>## &#39;data.frame&#39;:    11354 obs. of  17 variables:
+##  $ day        : int  24 24 24 24 24 24 24 24 24 24 ...
+##  $ month      : int  5 5 5 5 5 5 5 5 5 5 ...
+##  $ year       : int  19 19 19 19 19 19 19 19 19 19 ...
+##  $ hour       : int  0 1 1 1 2 2 2 3 3 6 ...
+##  $ minute     : int  49 9 29 49 9 29 49 9 29 47 ...
+##  $ second     : int  9 3 3 9 5 6 9 5 5 38 ...
+##  $ satellites : int  5 5 5 4 6 7 4 6 5 6 ...
+##  $ latitude   : num  42.8 42.8 42.8 42.8 42.8 ...
+##  $ longitude  : num  16.9 16.9 16.9 16.9 16.9 ...
+##  $ altitude   : num  -1.5 5.25 143.5 143 98 ...
+##  $ time_offset: num  2.91 2.79 2.79 2.91 2.93 ...
+##  $ accuracy   : num  4.70e-07 9.25e-07 3.52e-07 7.13e-07 4.87e-06 ...
+##  $ voltage    : num  4.12 4.08 4.08 4.1 4.12 4.1 4.12 4.12 4.12 4.1 ...
+##  $ colony_code: chr  &quot;Z&quot; &quot;Z&quot; &quot;Z&quot; &quot;Z&quot; ...
+##  $ bird_id    : chr  &quot;19_Tag17600_Z-9&quot; &quot;19_Tag17600_Z-9&quot; &quot;19_Tag17600_Z-9&quot; &quot;19_Tag17600_Z-9&quot; ...
+##  $ dttm       : chr  &quot;2019-05-24 00:49:09&quot; &quot;2019-05-24 01:09:03&quot; &quot;2019-05-24 01:29:03&quot; &quot;2019-05-24 01:49:09&quot; ...
+##  $ deploy_year: int  2019 2019 2019 2019 2019 2019 2019 2019 2019 2019 ...</code></pre>
+<p><br></p>
+</div>
+</div>
+<div id="seabird-tracking-database-format" class="section level2 hasAnchor" number="4.7">
+<h2><span class="header-section-number">4.7</span> Seabird Tracking Database format<a href="tracking-data-prepare-data-for-analysis.html#seabird-tracking-database-format" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Having data standardised into the same format greatly improves reproducible research, and also the ability for data to be used in other studies.</p>
+<p>The primary format we recommend is that of BirdLife International’s Seabird Tracking Database: - <a href="https://www.seabirdtracking.org/" class="uri">https://www.seabirdtracking.org/</a></p>
+<p>When you visit the Seabird Tracking Database website, you will find the <a href="https://www.seabirdtracking.org/instructions/">Instructions page</a>, which:</p>
+<ul>
+<li><p>provides information about the standardised format of data used in this global database, and</p></li>
+<li><p>provides a dataset template that you can use to support formatting your data into the format used within the Seabird Tracking Database.</p></li>
+</ul>
+<p>For further details:</p>
+<ul>
+<li><p>See the <a href="https://www.seabirdtracking.org/wp-content/uploads/2023/06/Instructions-to-submit-data-to-the-Seabird-Tracking-Database_2023.pdf">data submission instructions</a>.</p></li>
+<li><p>Download the <em>dataset template</em> from the <a href="https://www.seabirdtracking.org/instructions/">Instructions page</a></p></li>
+</ul>
+<p><br></p>
+<blockquote>
+<p>We recognise, however, that the format of the Seabird Tracking Database may not be appropriate for all analyses. Nevertheless, we encourage users to standardise their data into a common format. This will facilitate the ease through which data can be reformatted when necessary for other analyses.</p>
+</blockquote>
+<p><br></p>
+<div id="loading-the-dataset-template-from-seabird-tracking-database" class="section level3 hasAnchor" number="4.7.1">
+<h3><span class="header-section-number">4.7.1</span> Loading the dataset template from Seabird Tracking Database<a href="tracking-data-prepare-data-for-analysis.html#loading-the-dataset-template-from-seabird-tracking-database" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>By loading the dataset template from the Seabird Tracking Database, this can facilitate what the format of your data should adhere to, to support analyses outlined in the Marine Toolkit.</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="tracking-data-prepare-data-for-analysis.html#cb45-1" aria-hidden="true" tabindex="-1"></a>stdb.df.template <span class="ot">&lt;-</span> <span class="fu">read_xlsx</span>(<span class="st">&quot;./data-testing/tracking-data-input-stdb/Template_Datapoints.xlsx&quot;</span>,</span>
+<span id="cb45-2"><a href="tracking-data-prepare-data-for-analysis.html#cb45-2" aria-hidden="true" tabindex="-1"></a>                     <span class="at">sheet =</span> <span class="st">&quot;Template&quot;</span>)</span>
+<span id="cb45-3"><a href="tracking-data-prepare-data-for-analysis.html#cb45-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-4"><a href="tracking-data-prepare-data-for-analysis.html#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">data.frame</span>(stdb.df.template))</span></code></pre></div>
+<pre><code>##  [1] BirdId       Sex          Age          Breed.Stage  TrackId     
+##  [6] DateGMT      TimeGMT      Latitude     Longitude    Equinox     
+## [11] ArgosQuality
+## &lt;0 rows&gt; (or 0-length row.names)</code></pre>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="tracking-data-prepare-data-for-analysis.html#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="do">## dimensions of the seabird tracking database data template</span></span>
+<span id="cb47-2"><a href="tracking-data-prepare-data-for-analysis.html#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(stdb.df.template)</span></code></pre></div>
+<pre><code>## [1]  0 11</code></pre>
+<p><br></p>
+<p>You can see that the dataset template from the Seabird Tracking Database contains 11 columns. How you format your data to match that of the Seabird Tracking Database will be dependent on the type of animal tracking device used (i.e. GPS, PTT, GLS)</p>
+<blockquote>
+<p>SEE: within the Seabird Tracking Database template, the different example datasets for GPS, PTT, and GLS data.</p>
+</blockquote>
+<p>[See appendix for examples of preparing data from different device types for the format of the Seabird Tracking Database]</p>
+<p><br></p>
+</div>
+<div id="formatting-own-data-to-align-with-seabird-tracking-database-input-format" class="section level3 hasAnchor" number="4.7.2">
+<h3><span class="header-section-number">4.7.2</span> Formatting own data to align with Seabird Tracking Database INPUT format<a href="tracking-data-prepare-data-for-analysis.html#formatting-own-data-to-align-with-seabird-tracking-database-input-format" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><br></p>
+<p>Typically, you will need three things to get data ready for the STDB:</p>
+<ul>
+<li><p>“Dataset” level information</p></li>
+<li><p>Metadata information</p></li>
+<li><p>“Data point” level information</p></li>
+</ul>
+<p><br></p>
+<blockquote>
+<p>NOTE: Information stored in the STDB is organized into two levels – “Dataset” level and “Data points” level. The “dataset level” are provided by filling in an online form, and the “data points” level of information is submitted by uploading a csv file.</p>
+</blockquote>
+<ul>
+<li><strong>Review the data submission instructions</strong> indicated above for further guidance.</li>
+</ul>
+<div id="dataset-level-information-required-for-stdb" class="section level4 hasAnchor" number="4.7.2.1">
+<h4><span class="header-section-number">4.7.2.1</span> “Dataset” level information required for STDB<a href="tracking-data-prepare-data-for-analysis.html#dataset-level-information-required-for-stdb" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The “dataset level” information provides the broad background information about your dataset required for uploading the dataset to the STDB. It is the key information about any set of data that were collected for a given species, in a given colony, with a given type of device and are owned by the same group of contributors.</p>
+<p><br></p>
+</div>
+<div id="metadata-information" class="section level4 hasAnchor" number="4.7.2.2">
+<h4><span class="header-section-number">4.7.2.2</span> Metadata information<a href="tracking-data-prepare-data-for-analysis.html#metadata-information" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A metadata file is a set of data that describes and gives information about other data.</p>
+<p>In this tutorial we provide an example metadata file which helps describe the data associated with the tracking information for each individual bird.</p>
+<p>Users can adapt this example template as required.</p>
+<blockquote>
+<p>NOTE: To assist upload of your data to the Seabird Tracking Database, please ensure that entries in your relevant fields match the format used in the STDB.</p>
+</blockquote>
+<ul>
+<li><strong>Review the data submission instructions</strong> indicated above for further guidance.</li>
+</ul>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="tracking-data-prepare-data-for-analysis.html#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Load the relevant metadata file - reading xlsx files can be fiddly - may require different packages</span></span>
+<span id="cb49-2"><a href="tracking-data-prepare-data-for-analysis.html#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="co">#df_meta &lt;- read_xlsx(&quot;./data-testing/tracking-data/Puffinus-yelkouan-metadata/PUFYEL-Z-Metadata.xlsx&quot;,</span></span>
+<span id="cb49-3"><a href="tracking-data-prepare-data-for-analysis.html#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="co">#                     sheet = &quot;Sheet1&quot;)</span></span>
+<span id="cb49-4"><a href="tracking-data-prepare-data-for-analysis.html#cb49-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-5"><a href="tracking-data-prepare-data-for-analysis.html#cb49-5" aria-hidden="true" tabindex="-1"></a>df_meta <span class="ot">&lt;-</span> <span class="fu">read.xlsx</span>(<span class="at">file=</span><span class="st">&quot;./data-testing/tracking-data/Puffinus-yelkouan-metadata/PUFYEL-Z-Metadata.xlsx&quot;</span>, </span>
+<span id="cb49-6"><a href="tracking-data-prepare-data-for-analysis.html#cb49-6" aria-hidden="true" tabindex="-1"></a>                     <span class="at">sheetName=</span><span class="st">&quot;Sheet1&quot;</span>) </span>
+<span id="cb49-7"><a href="tracking-data-prepare-data-for-analysis.html#cb49-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb49-8"><a href="tracking-data-prepare-data-for-analysis.html#cb49-8" aria-hidden="true" tabindex="-1"></a><span class="do">## View the contents of the metadata file</span></span>
+<span id="cb49-9"><a href="tracking-data-prepare-data-for-analysis.html#cb49-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">data.frame</span>(df_meta),<span class="dv">2</span>)</span></code></pre></div>
+<pre><code>##               data_co.owners                         dataset_name
+## 1 BIOM-Croatia, name surname PUFYEL-Z-GPS-Chick-rearing-2019-2020
+## 2 BIOM-Croatia, name surname PUFYEL-Z-GPS-Chick-rearing-2019-2020
+##             species         bird_id colony_code lat_colony lon_colony     sex
+## 1 Puffinus yelkouan 19_Tag17600_Z-9           Z   42.77489   16.87565 unknown
+## 2 Puffinus yelkouan 19_Tag17604_Z-7           Z   42.77489   16.87565 unknown
+##   age_deployment_start breed_stage_deployment_start tracking_device_type
+## 1                adult                chick-rearing                  GPS
+## 2                adult                chick-rearing                  GPS
+##                    tracking_device_model tracking_data_interpolation
+## 1 PathTrack nanoFix GPS/UHF transmitters                          no
+## 2 PathTrack nanoFix GPS/UHF transmitters                          no
+##   device_deployment_date_UTC device_deployment_time_UTC
+## 1                 dd/mm/yyyy             hh:mm:ss AM/PM
+## 2                 dd/mm/yyyy             hh:mm:ss AM/PM
+##   device_retrieval_rate_UTC device_retrieval_time_UTC deployment_mass_kg
+## 1                dd/mm/yyyy            hh:mm:ss AM/PM               0.41
+## 2                dd/mm/yyyy            hh:mm:ss AM/PM               0.41
+##   retrieval_mass_kg other_1  other_2 aux_file_1 aux_file_2                notes
+## 1              0.42  bloods isotopes     images        tdr any relevant details
+## 2              0.42  bloods isotopes     images        tdr any relevant details</code></pre>
+<p>Check how many distinct entries you have. This number should match that of the number of unique birds tagged as part of this relevant dataset.</p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="tracking-data-prepare-data-for-analysis.html#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Check how many distinct entries you have</span></span>
+<span id="cb51-2"><a href="tracking-data-prepare-data-for-analysis.html#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(df_meta)</span></code></pre></div>
+<pre><code>## [1] 34</code></pre>
+<p><br></p>
+</div>
+<div id="obtain-point-data-file-for-data-points-level-information-required-for-stdb" class="section level4 hasAnchor" number="4.7.2.3">
+<h4><span class="header-section-number">4.7.2.3</span> Obtain point data file for “Data points” level information required for STDB<a href="tracking-data-prepare-data-for-analysis.html#obtain-point-data-file-for-data-points-level-information-required-for-stdb" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>First remind yourself of what the template STDB format looks like:</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="tracking-data-prepare-data-for-analysis.html#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">data.frame</span>(stdb.df.template))</span></code></pre></div>
+<pre><code>##  [1] BirdId       Sex          Age          Breed.Stage  TrackId     
+##  [6] DateGMT      TimeGMT      Latitude     Longitude    Equinox     
+## [11] ArgosQuality
+## &lt;0 rows&gt; (or 0-length row.names)</code></pre>
+<p>And also consider what your data looks like:</p>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="tracking-data-prepare-data-for-analysis.html#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(track.df,<span class="dv">2</span>)</span></code></pre></div>
+<pre><code>##   day month year hour minute second satellites latitude longitude altitude
+## 1  24     5   19    0     49      9          5 42.81153  16.88553    -1.50
+## 2  24     5   19    1      9      3          5 42.81203  16.88691     5.25
+##   time_offset    accuracy voltage colony_code         bird_id
+## 1       2.910 4.70376e-07    4.12           Z 19_Tag17600_Z-9
+## 2       2.795 9.25368e-07    4.08           Z 19_Tag17600_Z-9
+##                  dttm deploy_year
+## 1 2019-05-24 00:49:09        2019
+## 2 2019-05-24 01:09:03        2019</code></pre>
+<p><br></p>
+<p>Then align own data with input format required by STDB. Do this by using your supporting metadata.</p>
+<blockquote>
+<p>REMINDER: Within the Seabird Tracking Database template, you should recognise the options available to specify arguments within some fields. e.g. When specifying Age, this can only be specified as: adult, immature, juvenile fledgling, OR, unknown. Inputs for fields are case sensitive.</p>
+</blockquote>
+<p>The below code primarily is based around three functions in R:</p>
+<ul>
+<li><p><code>select</code></p></li>
+<li><p><code>mutate</code></p></li>
+<li><p><code>relocate</code></p></li>
+</ul>
+<p>Understand how these work if needed.</p>
+<p><br></p>
+<blockquote>
+<p>NOTE: You will need to change the names of your columns if they differ to the example data below.</p>
+</blockquote>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="tracking-data-prepare-data-for-analysis.html#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="do">## First, select relevant columns of information from your existing datapoint information needed to match the STDB format.</span></span>
+<span id="cb57-2"><a href="tracking-data-prepare-data-for-analysis.html#cb57-2" aria-hidden="true" tabindex="-1"></a>df_stdb <span class="ot">&lt;-</span> track.df <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">select</span>(bird_id,</span>
+<span id="cb57-3"><a href="tracking-data-prepare-data-for-analysis.html#cb57-3" aria-hidden="true" tabindex="-1"></a>                                      dttm,</span>
+<span id="cb57-4"><a href="tracking-data-prepare-data-for-analysis.html#cb57-4" aria-hidden="true" tabindex="-1"></a>                                      latitude,</span>
+<span id="cb57-5"><a href="tracking-data-prepare-data-for-analysis.html#cb57-5" aria-hidden="true" tabindex="-1"></a>                                      longitude) </span>
+<span id="cb57-6"><a href="tracking-data-prepare-data-for-analysis.html#cb57-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-7"><a href="tracking-data-prepare-data-for-analysis.html#cb57-7" aria-hidden="true" tabindex="-1"></a><span class="do">## Then, modify and create relevant columns of information - where you have these in your data - to align with STDB format.</span></span>
+<span id="cb57-8"><a href="tracking-data-prepare-data-for-analysis.html#cb57-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-9"><a href="tracking-data-prepare-data-for-analysis.html#cb57-9" aria-hidden="true" tabindex="-1"></a><span class="do">## the mutate functions allows you to add a new column of information.</span></span>
+<span id="cb57-10"><a href="tracking-data-prepare-data-for-analysis.html#cb57-10" aria-hidden="true" tabindex="-1"></a><span class="do">## add the new columns and rename the object to a more standardised name.</span></span>
+<span id="cb57-11"><a href="tracking-data-prepare-data-for-analysis.html#cb57-11" aria-hidden="true" tabindex="-1"></a>df_stdb <span class="ot">&lt;-</span> df_stdb <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">BirdId =</span> bird_id,</span>
+<span id="cb57-12"><a href="tracking-data-prepare-data-for-analysis.html#cb57-12" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">TrackId =</span> bird_id,</span>
+<span id="cb57-13"><a href="tracking-data-prepare-data-for-analysis.html#cb57-13" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">DateGMT =</span> <span class="fu">date</span>(dttm),</span>
+<span id="cb57-14"><a href="tracking-data-prepare-data-for-analysis.html#cb57-14" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">TimeGMT =</span> <span class="fu">format</span>(dttm, <span class="at">format =</span> <span class="st">&quot;%H:%M:%S&quot;</span>),</span>
+<span id="cb57-15"><a href="tracking-data-prepare-data-for-analysis.html#cb57-15" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">Latitude =</span> latitude,</span>
+<span id="cb57-16"><a href="tracking-data-prepare-data-for-analysis.html#cb57-16" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">Longitude =</span> longitude,</span>
+<span id="cb57-17"><a href="tracking-data-prepare-data-for-analysis.html#cb57-17" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">Equinox =</span> <span class="cn">NA</span>,</span>
+<span id="cb57-18"><a href="tracking-data-prepare-data-for-analysis.html#cb57-18" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">ArgosQuality =</span> <span class="cn">NA</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb57-19"><a href="tracking-data-prepare-data-for-analysis.html#cb57-19" aria-hidden="true" tabindex="-1"></a>  <span class="do">## remove the original columns (note the minus sign &quot;-&quot; in front of each column name you are removing)</span></span>
+<span id="cb57-20"><a href="tracking-data-prepare-data-for-analysis.html#cb57-20" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span>bird_id,</span>
+<span id="cb57-21"><a href="tracking-data-prepare-data-for-analysis.html#cb57-21" aria-hidden="true" tabindex="-1"></a>                <span class="sc">-</span>dttm,</span>
+<span id="cb57-22"><a href="tracking-data-prepare-data-for-analysis.html#cb57-22" aria-hidden="true" tabindex="-1"></a>                <span class="sc">-</span>latitude,</span>
+<span id="cb57-23"><a href="tracking-data-prepare-data-for-analysis.html#cb57-23" aria-hidden="true" tabindex="-1"></a>                <span class="sc">-</span>longitude) </span>
+<span id="cb57-24"><a href="tracking-data-prepare-data-for-analysis.html#cb57-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-25"><a href="tracking-data-prepare-data-for-analysis.html#cb57-25" aria-hidden="true" tabindex="-1"></a><span class="do">## Now GET THE relevant metadata information for your tracking data &quot;datapoints&quot; information</span></span>
+<span id="cb57-26"><a href="tracking-data-prepare-data-for-analysis.html#cb57-26" aria-hidden="true" tabindex="-1"></a><span class="do">## Ensure that your link column has the same name (in this case: it is the BirdID column above)</span></span>
+<span id="cb57-27"><a href="tracking-data-prepare-data-for-analysis.html#cb57-27" aria-hidden="true" tabindex="-1"></a>df_meta_points <span class="ot">&lt;-</span> df_meta <span class="sc">%&gt;%</span> </span>
+<span id="cb57-28"><a href="tracking-data-prepare-data-for-analysis.html#cb57-28" aria-hidden="true" tabindex="-1"></a>  <span class="do">## select the relevant columns</span></span>
+<span id="cb57-29"><a href="tracking-data-prepare-data-for-analysis.html#cb57-29" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(bird_id, sex, age_deployment_start, breed_stage_deployment_start) <span class="sc">%&gt;%</span> </span>
+<span id="cb57-30"><a href="tracking-data-prepare-data-for-analysis.html#cb57-30" aria-hidden="true" tabindex="-1"></a>  <span class="do">## rename the columns if need be to match the format of the STDB</span></span>
+<span id="cb57-31"><a href="tracking-data-prepare-data-for-analysis.html#cb57-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">BirdId =</span> bird_id, </span>
+<span id="cb57-32"><a href="tracking-data-prepare-data-for-analysis.html#cb57-32" aria-hidden="true" tabindex="-1"></a>         <span class="at">Sex =</span> sex, </span>
+<span id="cb57-33"><a href="tracking-data-prepare-data-for-analysis.html#cb57-33" aria-hidden="true" tabindex="-1"></a>         <span class="at">Age =</span> age_deployment_start, </span>
+<span id="cb57-34"><a href="tracking-data-prepare-data-for-analysis.html#cb57-34" aria-hidden="true" tabindex="-1"></a>         <span class="at">Breed.Stage =</span> breed_stage_deployment_start)</span>
+<span id="cb57-35"><a href="tracking-data-prepare-data-for-analysis.html#cb57-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb57-36"><a href="tracking-data-prepare-data-for-analysis.html#cb57-36" aria-hidden="true" tabindex="-1"></a><span class="do">## Now bind the relevant metadata onto your datapoints data</span></span>
+<span id="cb57-37"><a href="tracking-data-prepare-data-for-analysis.html#cb57-37" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_stdb,<span class="dv">2</span>)</span></code></pre></div>
+<pre><code>##            BirdId         TrackId    DateGMT             TimeGMT Latitude
+## 1 19_Tag17600_Z-9 19_Tag17600_Z-9 2019-05-24 2019-05-24 00:49:09 42.81153
+## 2 19_Tag17600_Z-9 19_Tag17600_Z-9 2019-05-24 2019-05-24 01:09:03 42.81203
+##   Longitude Equinox ArgosQuality
+## 1  16.88553      NA           NA
+## 2  16.88691      NA           NA</code></pre>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="tracking-data-prepare-data-for-analysis.html#cb59-1" aria-hidden="true" tabindex="-1"></a>df_stdb <span class="ot">&lt;-</span> <span class="fu">left_join</span>(df_stdb, df_meta_points, <span class="at">by =</span> <span class="st">&quot;BirdId&quot;</span>)</span>
+<span id="cb59-2"><a href="tracking-data-prepare-data-for-analysis.html#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="do">## review the bind worked</span></span>
+<span id="cb59-3"><a href="tracking-data-prepare-data-for-analysis.html#cb59-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_stdb,<span class="dv">2</span>)</span></code></pre></div>
+<pre><code>##            BirdId         TrackId    DateGMT             TimeGMT Latitude
+## 1 19_Tag17600_Z-9 19_Tag17600_Z-9 2019-05-24 2019-05-24 00:49:09 42.81153
+## 2 19_Tag17600_Z-9 19_Tag17600_Z-9 2019-05-24 2019-05-24 01:09:03 42.81203
+##   Longitude Equinox ArgosQuality     Sex   Age   Breed.Stage
+## 1  16.88553      NA           NA unknown adult chick-rearing
+## 2  16.88691      NA           NA unknown adult chick-rearing</code></pre>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="tracking-data-prepare-data-for-analysis.html#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Reorder the column names to match the format of the STDB</span></span>
+<span id="cb61-2"><a href="tracking-data-prepare-data-for-analysis.html#cb61-2" aria-hidden="true" tabindex="-1"></a>df_stdb <span class="ot">&lt;-</span> df_stdb <span class="sc">%&gt;%</span> </span>
+<span id="cb61-3"><a href="tracking-data-prepare-data-for-analysis.html#cb61-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(BirdId,</span>
+<span id="cb61-4"><a href="tracking-data-prepare-data-for-analysis.html#cb61-4" aria-hidden="true" tabindex="-1"></a>            Sex, </span>
+<span id="cb61-5"><a href="tracking-data-prepare-data-for-analysis.html#cb61-5" aria-hidden="true" tabindex="-1"></a>            Age, </span>
+<span id="cb61-6"><a href="tracking-data-prepare-data-for-analysis.html#cb61-6" aria-hidden="true" tabindex="-1"></a>            Breed.Stage,</span>
+<span id="cb61-7"><a href="tracking-data-prepare-data-for-analysis.html#cb61-7" aria-hidden="true" tabindex="-1"></a>            TrackId,</span>
+<span id="cb61-8"><a href="tracking-data-prepare-data-for-analysis.html#cb61-8" aria-hidden="true" tabindex="-1"></a>            DateGMT,</span>
+<span id="cb61-9"><a href="tracking-data-prepare-data-for-analysis.html#cb61-9" aria-hidden="true" tabindex="-1"></a>            TimeGMT,</span>
+<span id="cb61-10"><a href="tracking-data-prepare-data-for-analysis.html#cb61-10" aria-hidden="true" tabindex="-1"></a>            Latitude,</span>
+<span id="cb61-11"><a href="tracking-data-prepare-data-for-analysis.html#cb61-11" aria-hidden="true" tabindex="-1"></a>            Longitude,</span>
+<span id="cb61-12"><a href="tracking-data-prepare-data-for-analysis.html#cb61-12" aria-hidden="true" tabindex="-1"></a>            Equinox,</span>
+<span id="cb61-13"><a href="tracking-data-prepare-data-for-analysis.html#cb61-13" aria-hidden="true" tabindex="-1"></a>            ArgosQuality)</span>
+<span id="cb61-14"><a href="tracking-data-prepare-data-for-analysis.html#cb61-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-15"><a href="tracking-data-prepare-data-for-analysis.html#cb61-15" aria-hidden="true" tabindex="-1"></a><span class="do">## Compae your data, to the STDB data template</span></span>
+<span id="cb61-16"><a href="tracking-data-prepare-data-for-analysis.html#cb61-16" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_stdb,<span class="dv">2</span>)</span></code></pre></div>
+<pre><code>##            BirdId     Sex   Age   Breed.Stage         TrackId    DateGMT
+## 1 19_Tag17600_Z-9 unknown adult chick-rearing 19_Tag17600_Z-9 2019-05-24
+## 2 19_Tag17600_Z-9 unknown adult chick-rearing 19_Tag17600_Z-9 2019-05-24
+##               TimeGMT Latitude Longitude Equinox ArgosQuality
+## 1 2019-05-24 00:49:09 42.81153  16.88553      NA           NA
+## 2 2019-05-24 01:09:03 42.81203  16.88691      NA           NA</code></pre>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="tracking-data-prepare-data-for-analysis.html#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">data.frame</span>(stdb.df.template))</span></code></pre></div>
+<pre><code>##  [1] BirdId       Sex          Age          Breed.Stage  TrackId     
+##  [6] DateGMT      TimeGMT      Latitude     Longitude    Equinox     
+## [11] ArgosQuality
+## &lt;0 rows&gt; (or 0-length row.names)</code></pre>
+<p><br></p>
+</div>
+<div id="review-of-the-input-format-for-the-seabird-tracking-database" class="section level4 hasAnchor" number="4.7.2.4">
+<h4><span class="header-section-number">4.7.2.4</span> Review of the INPUT format for the Seabird Tracking Database<a href="tracking-data-prepare-data-for-analysis.html#review-of-the-input-format-for-the-seabird-tracking-database" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>For the columns highlighted above, you may notice a few things: <br></p>
+<ul>
+<li><p>BirdId, and TrackId, are specified with the same code. This is because when data is formatted to align with the format of the STDB:</p>
+<ul>
+<li>we have a code that relates to the bird that was tracked (BirdId)</li>
+<li>we have a unique code that relates to each trip undertaken by the bird, when multiple trips are recorded (TrackId). However, it is often the case that users do not provide data which has been pre-split into unique trips. Therefore, it is often the case that all entries relating to TrackId match that of BirdId</li>
+</ul></li>
+<li><p>Equinox and ArgosQuality are both specified as NA. This is because our data relates to GPS data which does not have an ArgosQuality estimate (typical of PTT devices) or a measure relating to the Equinox (typical of GLS devices).</p>
+<ul>
+<li>see the Seabird Tracking Database data template for examples of how to specify Equinox and ArgosQuality when necessary.</li>
+</ul></li>
+</ul>
+<p><br></p>
+</div>
+</div>
+</div>
+<div id="chapter-close-and-next-steps" class="section level2 hasAnchor" number="4.8">
+<h2><span class="header-section-number">4.8</span> Chapter close and next steps:<a href="tracking-data-prepare-data-for-analysis.html#chapter-close-and-next-steps" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><p>You should now have one key file:</p>
+<ul>
+<li><p>A single file (a data frame called df_stdb) with all your data standardised into a common format for further analyses.</p></li>
+<li><p>The common format of your data should reflect that of the INPUT files associated with uploading data to the Seabird Tracking Database.</p></li>
+</ul></li>
+</ul>
+<p><br></p>
+</div>
+<div id="save-data-for-further-analyses" class="section level2 hasAnchor" number="4.9">
+<h2><span class="header-section-number">4.9</span> Save data for further analyses:<a href="tracking-data-prepare-data-for-analysis.html#save-data-for-further-analyses" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>[Consider here better format for saving data - better aligning / automating process of file structure set up. E.g. populate species name earlier on. Create better way of getting meta data to pull information from metadata.]</p>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="tracking-data-prepare-data-for-analysis.html#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Metadata - “Data points” level information</span></span>
+<span id="cb65-2"><a href="tracking-data-prepare-data-for-analysis.html#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(df_stdb,</span>
+<span id="cb65-3"><a href="tracking-data-prepare-data-for-analysis.html#cb65-3" aria-hidden="true" tabindex="-1"></a>          <span class="st">&quot;./data-testing/tracking-data/Puffinus-yelkouan-STDB-input-format/PUFYEL-datapoints-tracking.csv&quot;</span>,</span>
+<span id="cb65-4"><a href="tracking-data-prepare-data-for-analysis.html#cb65-4" aria-hidden="true" tabindex="-1"></a>          <span class="at">row.names =</span> F)</span></code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="tracking-data-sampling-strategy.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
